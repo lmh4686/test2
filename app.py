@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://trello_dev:passwo
 
 db = SQLAlchemy(app)
 
-class Card(db.Model):  # Inherit db.Model
+class Card(db.Model):  # Inherit db.Model..
     __tablename__ = 'cards'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100))  # String is varchar 100 is length limit
